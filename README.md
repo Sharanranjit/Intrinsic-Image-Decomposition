@@ -10,12 +10,14 @@ Every RGB image can be assumed to be composed of two maps, which are albedo and 
 
 ## Sample outputs
 ## Implementation
-! Note: The code is based on **Keras 2.3.1** and **Tensorflow 1.15.2**, and the model is trained in **Google Colab** workspace.
+The code is based on **Keras 2.3.1** and **Tensorflow 1.15.2**, and the model is trained in **Google Colab** workspace. Code based on Tensorflow 2 coming soon!
 ### Training
 For training on MPI-Sintel dataset, run in terminal: ``` python train.py --epochs 15 ```  
 We train the model for 15 epochs with a learning rate of 0.0001 and batch size of 8 images. To modify other parameters, include ``` --help ``` flag.
 ### Testing
-For testing on different images, run: ``` python test.py --model --input```
+For testing, run: ``` python test.py --model Models/SIID_121.h5 --input Examples/input.png`--output_dir Examples/ ```  
+The trained model files are available in **Models**.  
+SIID_121 => DenseNet-121 as encoder, SIID_169 => DenseNet-169 as encoder
 
 
  
