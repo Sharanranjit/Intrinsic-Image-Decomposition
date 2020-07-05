@@ -10,8 +10,9 @@ Every RGB image can be assumed to be composed of two maps, which are albedo and 
 
 ## Data
 We use the [MPi-Sintel](http://sintel.is.tue.mpg.de/) dataset and generate 8900 images. 
-* Training data(4 GB): MPI.zip 
-* Test data(593 MB): MPI_2.zip 
+* Training data(4 GB): [MPI.zip](https://drive.google.com/uc?export=download&id=1t2ZanrGGeic1BEeXZoyLFzDz6BAD3Dfo)
+* Test data(593 MB): [MPI_2.zip](https://drive.google.com/uc?export=download&id=1e2UlScEz3LZzePEcDZlEHftVEcm4utWa) 
+
 The zip files must be in the same directory and no extraction is required. 
 
 ## Implementation 
@@ -24,8 +25,9 @@ We train the model for 15 epochs with a learning rate of 0.0001 and batch size o
 ### Testing
 For testing, run: ``` python test.py --model 'Models/SIID_121.h5' --input 'Examples/input.png' ``` 
 The trained models can be downloaded from below links: 
-SIID_121.h5 => DenseNet-121 as encoder 
-SIID_169.h5 => DenseNet-169 as encoder 
+* [SIID_121.h5](https://drive.google.com/uc?export=download&id=1-U3l4MORPxfeIHLwW-fp2-fgHBjU44nw) => DenseNet-121 as encoder 
+* [SIID_169.h5](https://drive.google.com/uc?export=download&id=1-dCJm0m5mz91w2n3kNVQQDEkOnxHtwwF) => DenseNet-169 as encoder
+
 **Note: The model currently accepts images whose height and width are a multiple of 32. You can resize the image 
 to the nearest multiple.**
 
